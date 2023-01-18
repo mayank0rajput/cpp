@@ -1,0 +1,417 @@
+date : 18/08/22
+
+// oopm class
+
+#include <iostream>
+using namespace std;
+#include <iomanip> //modify output
+
+int main(){
+  /*  cout<<setfill('*');
+    cout<<setw(10);
+    cout<<"111"<<endl;
+    cout<<setw(10);
+    cout<<"10\n"; */
+
+     int x;
+     cout<<"Enter value of x ";
+     cin>>x;
+     cout<<"value of x= "<<x<<endl;
+     cout<<"octal value "<<oct<<x<<endl;
+     cout<<"hexa value "<<hex<<x<<endl;
+     cout<<"decimal value "<<dec<<x<<endl;
+     cout<<setbase(8)<<x<<endl;
+
+
+    // double x;
+    // cout<<"Enter x:"<<endl;
+    // cin>>x;
+    // cout<<"scientific value of x ="<<scientific<<x<<endl;
+    // cout<<fixed<<x<<endl;
+    // cout<<setprecision(5)<<x<<endl;
+
+    // int x,*ptr;
+    // cout<<"enter value of x=";
+    // cin>>x;
+    // ptr=&x;
+    // cout<<"value of x="<<x<<endl;
+    // cout<<"address of x="<<ptr<<endl;
+    // cout<<"value of x="<<*ptr<<endl;
+
+}
+
+25/08/22
+
+
+#include <iostream>
+using namespace std;
+#include <iomanip>
+
+int main(){
+    // int a=38,b=192;
+    //  cout<<"a&b="<<(a&b)<<endl;
+    //  cout<<"a|b="<<(a|b)<<endl;
+    //  cout<<"a^b="<<(a^b)<<endl;
+
+    // cout<<"a<<1="<<(a<<1)<<endl;left hand operator
+    // cout<<"a<<2="<<(a<<2)<<endl;
+    // cout<<"b<<1="<<(b<<1)<<endl;
+    // cout<<"b<<2="<<(b<<2)<<endl;
+
+    // cout<<"a>>1="<<(a>>1)<<endl;
+    // cout<<"a>>2="<<(a>>2)<<endl;
+    // cout<<"b>>1="<<(b>>1)<<endl;
+    // cout<<"b>>2="<<(b>>2)<<endl;
+
+ //   int a=12,b=-125;
+    // cout<<"a="<<(a)<<endl;
+    // cout<<"~a= "<<(~a)<<endl;
+    // cout<<"b "<<(b)<<endl;
+    // cout<<"~b "<<(~b)<<endl;
+
+    // cout<<"value of a= "<<a<<endl;
+    // cout<<"octal value "<<oct<<a<<endl;
+    // cout<<"hexa value "<<hex<<a<<endl;
+    // cout<<"decimal value "<<dec<<a<<endl;
+    // cout<<setbase(8)<<a<<endl;
+
+    // int a=128,*ptr;
+    // ptr=&a;   //rename of a
+    // cout<<"a= "<<a<<endl;
+    // cout<<"a= "<<*ptr<<endl; //value at that address
+    // cout<<"address= "<<ptr<<endl;
+    // cout<<"address= "<<&a<<endl;
+    // cout<<"address= "<<&*ptr<<endl;
+
+    /* a=38 b= 192 calculate lohgival or ND EX OR 
+    A=*/
+
+    int x=11,y=12;
+    cout<<(x <= y)?x:y;
+    return 0;
+} 
+
+
+26/06/22
+
+/*
+#include <iostream>
+//using namespace std;
+
+int a=29;
+int main(){
+    int a=5,b=5,c;
+    std::cout<<"a= "<<a<<std::endl;
+    {
+        int a=3;
+        std::cout<<"a="<<a<<std::endl;
+    }
+    a=7;
+    //reassignment of variable 
+    std::cout<<"a= "<<a<<std::endl;
+    {
+        std::cout<<"a= "<<a<<std::endl;
+    }
+   // cout<<"a= "<<::a<<endl;
+
+    
+//     c=(a==b?23:48);
+//if logic is true then value at the left side of the colon will be assigned and if the logic is 
+//false then value at the right will be assigned.
+//     cout<<"a="<<a<<endl;
+//     cout<<"b="<<b<<endl;
+//     cout<<"c="<<c<<endl;
+
+}*/
+
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int x;
+    cout<<"Enter value of x "<<endl;
+    cin>>x;
+    x+=30;
+    cout<<"Value of x = "<<x<<endl;
+    //cout<<((x==35)&&(x<100))<<endl;
+   
+    if (x<0){
+        cout<<"x is neagative"<<endl;
+    }
+    else if (x>0){
+        cout<<"x is positive"<<endl;
+    }
+    else
+    {
+        cout<<"x is 0."<<endl;
+    }
+    
+}
+
+30/08/22
+
+
+#include <iostream>
+using namespace std;
+
+/*int main(){
+    int arr[6],i,elem,n;
+    cout<<"Enter 5 array element";
+    for(i=0;i<5;i++){
+    cin>>arr[i];
+    }
+    
+    // for (i=0;i<6;i++){
+    //     arr[i+1]=arr[i];
+    // }
+
+    cout<<"\n Enter  element to insert";
+    cin>>elem;
+    
+    
+    cout<<"which position you want to enter:";
+    cin>>n;
+    
+    arr[n-1]=elem;
+    
+    
+    cout<<"\n the new array is ";
+    for (i=0;i<5;i++){
+        cout<<arr[i]<<endl;
+    }
+}*/
+/*
+int main(){
+    int arr[30],i,elem,pos,tot;
+    cout>>"Enter size for array:";
+    cin>>tot;
+    cout<<"Enter "<<tot<<" array element";
+    for(i=0;i<tot;i++)
+    cin>>arr[i];
+    cout<<"\n Enter element to insert";
+    cin>>elem;
+    cout<<" at what position";
+    cin>>pos;
+    for(i=tot;i>=pos;i--)
+        arr[i]=arr[i-1];
+    arr[i]=elem;
+    tot++;
+    cout<<
+}*/
+/*
+int main(){
+    int x,y;
+    cout<<"Enter 2 numbers:";
+    cin>>x>>y;
+    switch(x==y && x+y>20)    //1 true ,0-false
+    {
+        case 1:
+            cout<<"condition true "<<x+y<<endl;
+            break;
+        case 0:
+            cout<<"condition false "x-y<<endl;
+            break;
+        default:
+        cout<<"invalid value"<<endl;
+    }
+}*/
+
+int main(){
+    char var;
+    cout<<"Enter any character ="<<endl;
+    cin>>var;
+
+
+    // if(var>='a'&& var<='z'){    //
+    //     cout<<var<<" is an alphabet "<<endl;
+    // }
+    // else if (var>='A'&& var<='Z'){
+    //     cout<<var<<" is an capital alphabet "<<endl;
+    // }
+    // else if(var>='0' && var<='9'){
+    //     cout<<var<<"is a digit"<<endl;
+    // }
+    // else{
+    //     cout<<var<<" is an alphabet "<<endl;
+    // }
+
+
+
+
+    switch (var>='a'&& var<='z'||var>='A'&& var<='Z'||var>='0' && var<='9')
+    {
+    case 1:
+        switch (var>='a'&& var<='z'||var>='A'&& var<='Z'){
+            case 1:
+                cout<<"Alphabet"<<endl;
+                break;
+            case 0:
+                cout<<"digit"<<endl;
+                break;
+        }
+    case 0:
+        cout<<"not a alphabet nor digit"<<endl;
+        break;
+}
+}
+
+
+
+int main(){
+    int x,y,z;
+    cout<<"enter values:"<<endl;
+    cin>>x>>y>>z;
+
+    if(x+y+z==180){
+        cout<<"they can make triangle"<<endl;
+    }
+    else {
+        cout<<"they cant";
+    }
+}
+
+//write a program to illustrate multiple inheritance in cpp 
+
+
+17//08//22
+
+// common keywords
+/*
+#include <iostream>
+#include <typeinfo>
+using namespace std;
+#define pi 3.1423
+const int x = 44;
+
+int main(){
+    cout<<"Type of variable pi="<<pi<<endl;
+    // const does not change value
+    cout<<"value of x is "<<x<<endl;
+}*/
+
+#include <iostream>
+
+using namespace std;
+enum color{green=1,blue=6,yellow=8,orange=9} c1;
+int main(){
+    cout<<green;
+}
+
+#include <iostream>
+using namespace std;
+/*
+int main(){
+    int i =0;
+    while(i<10){
+        if(i==5) break;
+        cout<<i<<endl;
+        i++;
+    }
+}
+    int main(){
+    int i=0;
+    l1: cout<<"program 1 terminated"<<endl;
+    while(i<10){
+        cout<<"i="<<i<<endl;
+        i++;
+        if(i==5){goto l1;} // goto statement
+        
+    }
+}*/
+
+/*
+void sum(int x,int y){// two argument funvtion
+    cout<<"a+b="<<(x+y)<<endl;
+}
+
+void sum(){// two argument funvtion
+    
+    cout<<"a+b="<<34+56<<endl;
+}
+
+int main(){
+    sum(34,56);
+    cout<<"program terminated"<<endl;
+}
+*/
+/* two or more function having same name but they differ in number of argument is called function overloding*/
+
+// void display(){
+//     cout<<"0 argument function"<<endl;
+// }
+// void display(int x){
+//     cout<<"1 argument function"<<endl;
+// }
+// void display(int x,int y){
+//     cout<<"2 argument function"<<endl;
+// }
+// void display(int y,int x,int z){
+//     cout<<"3 argument function"<<endl;
+// }
+// int main(){
+//     display(23,'a');
+
+// }
+
+
+
+void display(){
+    cout<<"0 argument function"<<endl;
+}
+void display(int x,char a){
+    cout<<"1 argument int function"<<endl;
+}
+void display(int x,int y){
+    cout<<"2 argument function"<<endl;
+}
+void display(int y,int x,int z){
+    cout<<"3 argument function"<<endl;
+}
+
+
+int main(){
+    display(23,'a');
+
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num[5][3],i,j;
+    for (int i=0;i<5;i++){
+        for (int j=0;j<3;j++){
+            cout<<"Enter value for "<<"["<<i<<"]"<<"["<<j<<"]=";
+            cin>>num[i][j];
+        }
+    }
+    // to print array
+
+    for (int i=0;i<5;i++){
+        for (int j=0;j<3;j++){
+            cout<<num[i][j]<<"  ";
+        }cout<<endl;
+    }
+
+    int sum=0;
+    for (int i=0;i<5;i++){
+        for (int j=0;j<3;j++){
+            sum=num[i][j]+sum;
+        }
+    }
+    cout<<"sum"<<sum<<endl;
+    cout<<"average"<<sum/15;
+}
+
+
+calcualte sum of row values
+
+
+
+ 
+
+
+
+ 
